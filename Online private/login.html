@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function validateForm() {
+  let x = document.forms["login"]["email"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  let y = document.forms["login"]["password"].value;
+  else (y == "") {
+    alert("Password must be filled out");
+    return false;}
+}
+</script>
+
+
+<link rel="stylesheet" href="tutor style.css">
+
+
+<a href="file:///C:/Users/OyeKOLA/Desktop/Online%20private/Tutor%20Finder.html" class="brand-logo logo">Tutor Finder</a>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s5 offset-s1 left">
+                <div class="row formDiv">
+                    <h4>Log In to Your Account</h4>
+                    <form action="login" id="login" method="post" class="col s12" name="login"  onsubmit="return validateForm()">
+                    <div class="input-field s12">
+                        
+                        <input id="email" type="text" class="validate" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field s12">
+                        
+                        <input id="password" type="password" class="validate" name="password">
+                        <label for="password">Password</label>
+                    </div>
+                   
+						<button class="btn waves-effect waves-light" type="submit">Submit</button>
+                    </div>
+                    </form>
+                    <div class="col s12 textDiv">
+                    <p>Don't have an account? <a href="file:///C:/Users/OyeKOLA/Desktop/Online%20private/register.html"">Register here</a>.</p>
+                    </div>
+                </div>
+            </div>
+            
+                    </div>
+                  </div>
+                    </form>
+                </div>
+          
+</main>
+
+
+
+</footer>
+</head>
+<body>
+</body>
+</html>
